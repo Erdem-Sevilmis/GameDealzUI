@@ -1,0 +1,39 @@
+name: dealz
+description: A new Flutter application.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.12.2
+  meta: ^1.2.4
+  rxdart: ^0.25.0
+  url_launcher: ^6.0.3
+  theme_mode_handler: ^3.0.0
+  cupertino_icons: ^1.0.0
+  flutter_launcher_icons: ^0.9.0
+  shared_preferences: ^2.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - Assets/Favourite_Games.json
+    - Assets/Images/
+  fonts:
+    - family: PublicSecretFont
+      fonts:
+        - asset: Assets/Public_Secret_Font.ttf
+
+flutter_icons:
+  android: true
+  image_path: "Assets/Images/DealZ_Icon.png"
+  ios: true
