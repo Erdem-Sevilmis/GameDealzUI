@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:html';
 import 'Data/Game.dart';
 import 'Screens/GameScreen.dart';
 import 'Screens/LoginScreen.dart';
@@ -26,7 +25,7 @@ void main() {
 }
 
 class GameDealz extends StatelessWidget {
-  static const String URL="http://localhost:3000/api/";
+  static const String URL="http://10.0.2.2:3000/api/";
   @override
   Widget build(BuildContext context) {
     return BlocProvider<SoonToReleaseQueryBloc>(

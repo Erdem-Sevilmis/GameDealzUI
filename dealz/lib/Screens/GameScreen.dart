@@ -39,7 +39,17 @@ class GamePage extends StatelessWidget {
               builder: (BuildContext context,
                   AsyncSnapshot<List<KeySite>> snapshot) {
                 if (snapshot.hasError) return Text('Error: ${snapshot.error}');
+                /*
+                  Screen wird aufgerufen -> waiting
+                  Daten sind ready -> active
 
+                  screen wird geschlossen
+
+                  Screen wird aufgerufen -> waiting (daten vom voherigen game werden dagestellt)
+                  Daten sind ready -> active (daten werden übserchrieben und sind nun richtig)
+
+                  !Der loading screen wird beim 2 fall nicht dargestellt!
+                 */
                 switch (snapshot.connectionState) {
                   case ConnectionState.waiting:
                     return Center(child: CircularProgressIndicator());

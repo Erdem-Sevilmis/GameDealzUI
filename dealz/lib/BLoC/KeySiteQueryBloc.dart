@@ -20,7 +20,7 @@ class KeySiteQueryBloc implements Bloc {
       await http.get(GameDealz.URL+"/infourl?url=$idOrUrl");
     } else if (idOrUrl is int) {
      response =
-        await http.get(GameDealz.URL+"/info?id=$idOrUrl");
+        await http.get(GameDealz.URL+"info?id=$idOrUrl");
     }
     String stringResult = response.body;
     if (response.statusCode == 200) {

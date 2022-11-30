@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80097da9-ddad-48aa-94e0-99cde8457cbc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/BLoC/GameQueryBloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/BLoC/GameQueryBloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/BLoC/KeySiteQueryBloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/BLoC/KeySiteQueryBloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/BLoC/MostPlayedQueryBloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/BLoC/MostPlayedQueryBloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/BLoC/SoonToReleaseQueryBloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/BLoC/SoonToReleaseQueryBloc.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/BLoC/TopGameQueryBloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/BLoC/TopGameQueryBloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Screens/FavouritesScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Screens/FavouritesScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Screens/LoginScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Screens/LoginScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Screens/SignupScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Screens/SignupScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Screens/GameScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Screens/GameScreen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -60,15 +58,15 @@
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/BLoC/KeySiteQueryBloc.dart</url>
-          <line>22</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
