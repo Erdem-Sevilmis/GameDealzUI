@@ -23,7 +23,7 @@ class GamePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     KeySiteQueryBloc bloc = BlocProvider.of<KeySiteQueryBloc>(context);
-
+    List<KeySite> providerData= List.empty(growable: true);
     if (game.id == null) {
       bloc.GetInfo(game.url);
     } else {
@@ -31,7 +31,12 @@ class GamePage extends StatelessWidget {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(game.name)),
+      appBar: AppBar(title: Text(game.name), leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            //The Listview(with the snapshot.data) must be emptied
+            Navigator.of(context).pop();
+          }),),
       body: Center(
         child: Container(
           child: StreamBuilder<List<KeySite>>(
@@ -39,6 +44,9 @@ class GamePage extends StatelessWidget {
               builder: (BuildContext context,
                   AsyncSnapshot<List<KeySite>> snapshot) {
                 if (snapshot.hasError) return Text('Error: ${snapshot.error}');
+                if(snapshot.hasData == true){
+
+                }
                 /*
                   Screen wird aufgerufen -> waiting
                   Daten sind ready -> active
@@ -82,8 +90,9 @@ class GamePage extends StatelessWidget {
                           },
                         ))
                             .toList());
+
                   case ConnectionState.done:
-                    return Text('${snapshot.data} (closed)');
+                    break;
                   case ConnectionState.none:
                     break;
                 }

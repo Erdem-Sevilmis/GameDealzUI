@@ -25,7 +25,7 @@ class _BlockProviderState extends State<BlocProvider> {
   Widget build(BuildContext context) => widget.child;
 
   @override
-  void dispose() {
+    void dispose() {
     widget.bloc.dispose();
     super.dispose();
   }
